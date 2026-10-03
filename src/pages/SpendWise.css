@@ -1,0 +1,720 @@
+/* =========================================
+   SPENDWISE CASE STUDY
+========================================= */
+
+.spendwise-page {
+  padding-top: 80px;
+
+  background:
+    radial-gradient(
+      circle at 85% 5%,
+      rgba(49, 94, 251, 0.13),
+      transparent 28%
+    ),
+    #080a0f;
+
+  color: #f5f7fa;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.spendwise-hero {
+  min-height: 78vh;
+
+  padding: 110px 7% 90px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-bottom: 1px solid #252a34;
+
+  position: relative;
+}
+
+.spendwise-label {
+  margin: 0 0 35px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #4f7cff;
+
+  font-weight: 700;
+}
+
+.spendwise-hero h1 {
+  margin: 0;
+
+  font-size: clamp(90px, 14vw, 190px);
+
+  line-height: 0.78;
+
+  letter-spacing: -10px;
+
+  font-weight: 700;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.spendwise-hero h1 span {
+  color: #4f7cff;
+}
+
+.spendwise-intro {
+  max-width: 680px;
+
+  margin: 55px 0 0;
+
+  font-size: 20px;
+
+  line-height: 1.7;
+
+  color: #9aa1af;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* Decorative hero element */
+
+.spendwise-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  right: -130px;
+  top: 70px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(79, 124, 255, 0.15);
+
+  box-shadow:
+    0 0 100px rgba(49, 94, 251, 0.08);
+
+  pointer-events: none;
+}
+
+.spendwise-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  right: 15%;
+  top: 35%;
+
+  border-radius: 50%;
+
+  background: #4f7cff;
+
+  box-shadow:
+    0 0 35px rgba(79, 124, 255, 0.8);
+}
+
+
+/* =========================================
+   MAIN IMAGE
+========================================= */
+
+.spendwise-main-image {
+  margin: 0 7%;
+
+  padding: 75px 0;
+}
+
+.spendwise-main-image img {
+  width: 100%;
+
+  height: 620px;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border-radius: 26px;
+
+  border: 1px solid #252a34;
+
+  box-shadow:
+    0 35px 90px rgba(0, 0, 0, 0.4);
+
+  transition:
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s ease;
+}
+
+.spendwise-main-image:hover img {
+  transform: scale(1.01);
+
+  box-shadow:
+    0 45px 110px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.spendwise-section {
+  padding: 120px 7%;
+
+  display: grid;
+
+  grid-template-columns: 0.25fr 1fr;
+
+  gap: 70px;
+
+  border-top: 1px solid #252a34;
+}
+
+.spendwise-section-label {
+  padding-top: 8px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #4f7cff;
+
+  font-weight: 700;
+}
+
+.spendwise-section-content {
+  max-width: 900px;
+}
+
+.spendwise-section-content h2 {
+  margin: 0 0 45px;
+
+  font-size: clamp(50px, 7vw, 95px);
+
+  line-height: 0.9;
+
+  letter-spacing: -5px;
+
+  font-weight: 700;
+}
+
+.spendwise-section-content h2 span {
+  color: #4f7cff;
+}
+
+.spendwise-section-content > p {
+  max-width: 720px;
+
+  margin: 0 0 25px;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: #9aa1af;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.spendwise-features {
+  margin-top: 70px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1px;
+
+  background: #252a34;
+
+  border: 1px solid #252a34;
+}
+
+.spendwise-features > div {
+  padding: 42px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #151923,
+      #10131a
+    );
+
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.spendwise-features > div:hover {
+  background:
+    linear-gradient(
+      145deg,
+      #1a1f2b,
+      #11151d
+    );
+
+  transform: translateY(-3px);
+}
+
+.spendwise-features strong {
+  font-size: 12px;
+
+  color: #4f7cff;
+
+  letter-spacing: 1px;
+}
+
+.spendwise-features h3 {
+  margin: 25px 0 12px;
+
+  font-size: 24px;
+
+  color: #f5f7fa;
+}
+
+.spendwise-features p {
+  margin: 0;
+
+  color: #8f97a5;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   WORKFLOW
+========================================= */
+
+.spendwise-workflow {
+  background:
+    radial-gradient(
+      circle at 85% 50%,
+      rgba(49, 94, 251, 0.08),
+      transparent 35%
+    ),
+    #10131a;
+}
+
+.spendwise-flow {
+  display: flex;
+
+  align-items: stretch;
+
+  gap: 12px;
+
+  margin-top: 70px;
+}
+
+.spendwise-flow-step {
+  flex: 1;
+
+  padding: 32px;
+
+  background: #151923;
+
+  border: 1px solid #303641;
+
+  position: relative;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.spendwise-flow-step:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(79, 124, 255, 0.5);
+}
+
+.spendwise-flow-step span {
+  font-size: 11px;
+
+  color: #4f7cff;
+
+  letter-spacing: 1px;
+
+  font-weight: 600;
+}
+
+.spendwise-flow-step h3 {
+  margin: 25px 0 10px;
+
+  font-size: 20px;
+
+  color: #f5f7fa;
+}
+
+.spendwise-flow-step p {
+  margin: 0;
+
+  color: #858d9b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.spendwise-flow-arrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 24px;
+
+  color: #4f7cff;
+
+  padding: 0 3px;
+}
+
+
+/* =========================================
+   TECHNOLOGY
+   Editorial — NOT BUTTONS
+========================================= */
+
+.spendwise-tech-stack {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 0;
+
+  margin-top: 25px;
+
+  max-width: 800px;
+}
+
+.spendwise-tech-stack span {
+  position: relative;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 0;
+
+  background: transparent;
+
+  color: #c1c6cf;
+
+  font-size: 14px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.spendwise-tech-stack span:first-child {
+  padding-left: 0;
+}
+
+.spendwise-tech-stack span:not(:last-child)::after {
+  content: "•";
+
+  position: absolute;
+
+  right: -2px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #4f7cff;
+}
+
+.spendwise-tech-stack span:hover {
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CLOSING
+========================================= */
+
+.spendwise-closing {
+  padding: 160px 7%;
+
+  text-align: center;
+
+  border-top: 1px solid #252a34;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(49, 94, 251, 0.15),
+      transparent 42%
+    ),
+    #080a0f;
+}
+
+.spendwise-closing p {
+  margin: 0 0 35px;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: #4f7cff;
+
+  font-weight: 600;
+}
+
+.spendwise-closing h2 {
+  margin: 0;
+
+  font-size: clamp(65px, 9vw, 130px);
+
+  line-height: 0.85;
+
+  letter-spacing: -7px;
+
+  font-weight: 700;
+}
+
+.spendwise-closing h2 span {
+  color: #4f7cff;
+}
+
+.spendwise-closing a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 60px;
+
+  color: #f5f7fa;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition:
+    color 0.3s ease,
+    gap 0.3s ease;
+}
+
+.spendwise-closing a:hover {
+  color: #4f7cff;
+
+  gap: 15px;
+}
+
+
+/* =========================================
+   ENTRANCE ANIMATIONS
+========================================= */
+
+.spendwise-hero h1 {
+  animation: spendwiseTitle 0.9s ease forwards;
+}
+
+.spendwise-intro {
+  animation: spendwiseIntro 0.9s ease 0.15s both;
+}
+
+.spendwise-main-image {
+  animation: spendwiseImage 0.9s ease 0.25s both;
+}
+
+@keyframes spendwiseTitle {
+  from {
+    opacity: 0;
+
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes spendwiseIntro {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes spendwiseImage {
+  from {
+    opacity: 0;
+
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .spendwise-section {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .spendwise-main-image img {
+    height: 450px;
+  }
+
+  .spendwise-flow {
+    flex-direction: column;
+  }
+
+  .spendwise-flow-arrow {
+    transform: rotate(90deg);
+
+    padding: 5px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .spendwise-hero {
+    padding: 80px 5%;
+  }
+
+  .spendwise-hero h1 {
+    font-size: 75px;
+
+    letter-spacing: -5px;
+  }
+
+  .spendwise-intro {
+    font-size: 17px;
+
+    margin-top: 40px;
+  }
+
+  .spendwise-main-image {
+    margin: 0 5%;
+
+    padding: 40px 0;
+  }
+
+  .spendwise-main-image img {
+    height: 300px;
+
+    border-radius: 15px;
+  }
+
+  .spendwise-section {
+    padding: 80px 5%;
+  }
+
+  .spendwise-section-content h2 {
+    font-size: 50px;
+
+    letter-spacing: -3px;
+  }
+
+  .spendwise-section-content > p {
+    font-size: 16px;
+  }
+
+  .spendwise-features {
+    grid-template-columns: 1fr;
+
+    margin-top: 50px;
+  }
+
+  .spendwise-features > div {
+    padding: 30px;
+  }
+
+  .spendwise-tech-stack span {
+    padding: 0 12px;
+
+    font-size: 12px;
+  }
+
+  .spendwise-tech-stack span:first-child {
+    padding-left: 0;
+  }
+
+  .spendwise-closing {
+    padding: 100px 5%;
+  }
+
+  .spendwise-closing h2 {
+    font-size: 58px;
+
+    letter-spacing: -4px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .spendwise-hero h1,
+  .spendwise-intro,
+  .spendwise-main-image {
+    animation: none;
+  }
+
+  .spendwise-main-image img,
+  .spendwise-features > div,
+  .spendwise-flow-step,
+  .spendwise-closing a {
+    transition: none;
+  }
+}

@@ -1,0 +1,720 @@
+/* =========================================
+   SMARTCART CASE STUDY
+========================================= */
+
+.smartcart-page {
+  padding-top: 80px;
+
+  background:
+    radial-gradient(
+      circle at 85% 5%,
+      rgba(49, 94, 251, 0.13),
+      transparent 28%
+    ),
+    #080a0f;
+
+  color: #f5f7fa;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.smartcart-hero {
+  min-height: 78vh;
+
+  padding: 110px 7% 90px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-bottom: 1px solid #252a34;
+
+  position: relative;
+}
+
+.smartcart-label {
+  margin: 0 0 35px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #4f7cff;
+
+  font-weight: 700;
+}
+
+.smartcart-hero h1 {
+  margin: 0;
+
+  font-size: clamp(90px, 14vw, 190px);
+
+  line-height: 0.78;
+
+  letter-spacing: -10px;
+
+  font-weight: 700;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.smartcart-hero h1 span {
+  color: #4f7cff;
+}
+
+.smartcart-intro {
+  max-width: 680px;
+
+  margin: 55px 0 0;
+
+  font-size: 20px;
+
+  line-height: 1.7;
+
+  color: #9aa1af;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* Decorative hero element */
+
+.smartcart-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  right: -130px;
+  top: 70px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(79, 124, 255, 0.15);
+
+  box-shadow:
+    0 0 100px rgba(49, 94, 251, 0.08);
+
+  pointer-events: none;
+}
+
+.smartcart-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  right: 15%;
+  top: 35%;
+
+  border-radius: 50%;
+
+  background: #4f7cff;
+
+  box-shadow:
+    0 0 35px rgba(79, 124, 255, 0.8);
+}
+
+
+/* =========================================
+   MAIN IMAGE
+========================================= */
+
+.smartcart-main-image {
+  margin: 0 7%;
+
+  padding: 75px 0;
+}
+
+.smartcart-main-image img {
+  width: 100%;
+
+  height: 620px;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border-radius: 26px;
+
+  border: 1px solid #252a34;
+
+  box-shadow:
+    0 35px 90px rgba(0, 0, 0, 0.4);
+
+  transition:
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s ease;
+}
+
+.smartcart-main-image:hover img {
+  transform: scale(1.01);
+
+  box-shadow:
+    0 45px 110px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.smartcart-section {
+  padding: 120px 7%;
+
+  display: grid;
+
+  grid-template-columns: 0.25fr 1fr;
+
+  gap: 70px;
+
+  border-top: 1px solid #252a34;
+}
+
+.smartcart-section-label {
+  padding-top: 8px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #4f7cff;
+
+  font-weight: 700;
+}
+
+.smartcart-section-content {
+  max-width: 900px;
+}
+
+.smartcart-section-content h2 {
+  margin: 0 0 45px;
+
+  font-size: clamp(50px, 7vw, 95px);
+
+  line-height: 0.9;
+
+  letter-spacing: -5px;
+
+  font-weight: 700;
+}
+
+.smartcart-section-content h2 span {
+  color: #4f7cff;
+}
+
+.smartcart-section-content > p {
+  max-width: 720px;
+
+  margin: 0 0 25px;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: #9aa1af;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.smartcart-features {
+  margin-top: 70px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1px;
+
+  background: #252a34;
+
+  border: 1px solid #252a34;
+}
+
+.smartcart-features > div {
+  padding: 42px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #151923,
+      #10131a
+    );
+
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.smartcart-features > div:hover {
+  background:
+    linear-gradient(
+      145deg,
+      #1a1f2b,
+      #11151d
+    );
+
+  transform: translateY(-3px);
+}
+
+.smartcart-features strong {
+  font-size: 12px;
+
+  color: #4f7cff;
+
+  letter-spacing: 1px;
+}
+
+.smartcart-features h3 {
+  margin: 25px 0 12px;
+
+  font-size: 24px;
+
+  color: #f5f7fa;
+}
+
+.smartcart-features p {
+  margin: 0;
+
+  color: #8f97a5;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   WORKFLOW
+========================================= */
+
+.smartcart-workflow {
+  background:
+    radial-gradient(
+      circle at 85% 50%,
+      rgba(49, 94, 251, 0.08),
+      transparent 35%
+    ),
+    #10131a;
+}
+
+.smartcart-flow {
+  display: flex;
+
+  align-items: stretch;
+
+  gap: 12px;
+
+  margin-top: 70px;
+}
+
+.smartcart-flow-step {
+  flex: 1;
+
+  padding: 32px;
+
+  background: #151923;
+
+  border: 1px solid #303641;
+
+  position: relative;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.smartcart-flow-step:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(79, 124, 255, 0.5);
+}
+
+.smartcart-flow-step span {
+  font-size: 11px;
+
+  color: #4f7cff;
+
+  letter-spacing: 1px;
+
+  font-weight: 600;
+}
+
+.smartcart-flow-step h3 {
+  margin: 25px 0 10px;
+
+  font-size: 20px;
+
+  color: #f5f7fa;
+}
+
+.smartcart-flow-step p {
+  margin: 0;
+
+  color: #858d9b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.smartcart-flow-arrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 24px;
+
+  color: #4f7cff;
+
+  padding: 0 3px;
+}
+
+
+/* =========================================
+   TECHNOLOGY
+   Editorial — NOT BUTTONS
+========================================= */
+
+.smartcart-tech-stack {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 0;
+
+  margin-top: 25px;
+
+  max-width: 800px;
+}
+
+.smartcart-tech-stack span {
+  position: relative;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 0;
+
+  background: transparent;
+
+  color: #c1c6cf;
+
+  font-size: 14px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.smartcart-tech-stack span:first-child {
+  padding-left: 0;
+}
+
+.smartcart-tech-stack span:not(:last-child)::after {
+  content: "•";
+
+  position: absolute;
+
+  right: -2px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #4f7cff;
+}
+
+.smartcart-tech-stack span:hover {
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CLOSING
+========================================= */
+
+.smartcart-closing {
+  padding: 160px 7%;
+
+  text-align: center;
+
+  border-top: 1px solid #252a34;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(49, 94, 251, 0.15),
+      transparent 42%
+    ),
+    #080a0f;
+}
+
+.smartcart-closing p {
+  margin: 0 0 35px;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: #4f7cff;
+
+  font-weight: 600;
+}
+
+.smartcart-closing h2 {
+  margin: 0;
+
+  font-size: clamp(65px, 9vw, 130px);
+
+  line-height: 0.85;
+
+  letter-spacing: -7px;
+
+  font-weight: 700;
+}
+
+.smartcart-closing h2 span {
+  color: #4f7cff;
+}
+
+.smartcart-closing a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 60px;
+
+  color: #f5f7fa;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition:
+    color 0.3s ease,
+    gap 0.3s ease;
+}
+
+.smartcart-closing a:hover {
+  color: #4f7cff;
+
+  gap: 15px;
+}
+
+
+/* =========================================
+   ENTRANCE ANIMATIONS
+========================================= */
+
+.smartcart-hero h1 {
+  animation: smartcartTitle 0.9s ease forwards;
+}
+
+.smartcart-intro {
+  animation: smartcartIntro 0.9s ease 0.15s both;
+}
+
+.smartcart-main-image {
+  animation: smartcartImage 0.9s ease 0.25s both;
+}
+
+@keyframes smartcartTitle {
+  from {
+    opacity: 0;
+
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes smartcartIntro {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes smartcartImage {
+  from {
+    opacity: 0;
+
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .smartcart-section {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .smartcart-main-image img {
+    height: 450px;
+  }
+
+  .smartcart-flow {
+    flex-direction: column;
+  }
+
+  .smartcart-flow-arrow {
+    transform: rotate(90deg);
+
+    padding: 5px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .smartcart-hero {
+    padding: 80px 5%;
+  }
+
+  .smartcart-hero h1 {
+    font-size: 75px;
+
+    letter-spacing: -5px;
+  }
+
+  .smartcart-intro {
+    font-size: 17px;
+
+    margin-top: 40px;
+  }
+
+  .smartcart-main-image {
+    margin: 0 5%;
+
+    padding: 40px 0;
+  }
+
+  .smartcart-main-image img {
+    height: 300px;
+
+    border-radius: 15px;
+  }
+
+  .smartcart-section {
+    padding: 80px 5%;
+  }
+
+  .smartcart-section-content h2 {
+    font-size: 50px;
+
+    letter-spacing: -3px;
+  }
+
+  .smartcart-section-content > p {
+    font-size: 16px;
+  }
+
+  .smartcart-features {
+    grid-template-columns: 1fr;
+
+    margin-top: 50px;
+  }
+
+  .smartcart-features > div {
+    padding: 30px;
+  }
+
+  .smartcart-tech-stack span {
+    padding: 0 12px;
+
+    font-size: 12px;
+  }
+
+  .smartcart-tech-stack span:first-child {
+    padding-left: 0;
+  }
+
+  .smartcart-closing {
+    padding: 100px 5%;
+  }
+
+  .smartcart-closing h2 {
+    font-size: 58px;
+
+    letter-spacing: -4px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .smartcart-hero h1,
+  .smartcart-intro,
+  .smartcart-main-image {
+    animation: none;
+  }
+
+  .smartcart-main-image img,
+  .smartcart-features > div,
+  .smartcart-flow-step,
+  .smartcart-closing a {
+    transition: none;
+  }
+}
